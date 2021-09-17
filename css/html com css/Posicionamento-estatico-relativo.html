@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Posicionamento(static, relative, absolute e fixed)</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+        body{
+            background-color: #007fc7;
+        }
+        #container{
+            background-color: white;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            position: relative; 
+        }
+        h1{
+            position: static;   /*O elemento se comporta normalmente e ocupa seu local destinado*/
+        }
+        p{
+            position: static;
+            width: 300px;
+        }
+        .relative{
+            border: 1px solid red;
+            position: relative; 
+            /*
+            O elemento inicialmente se encontra na posição inicial, mas, é possivel caminhar com o objeto usando: top, left...
+            vocẽ consegue alinhar o elemento baseado na sua posição inicial
+            */
+            top:5px;
+            left: 80px;
+        }
+        .absolute{
+            position: absolute; 
+            /*
+            Permite definir uma caixa que é removida do fluxo do documento (ficando acima)
+            Você consegue alinhar essa caixa baseado em outra caixa maior que tenha uma posição diferente de static
+            */
+            border: 1px solid green;
+            background-color: grey;
+            right: 20px;
+            top: 80px;
+            /*também é possivel ajustar sua posição atravez de: right, left, top e bottom*/
+        }
+        .fixed{
+            position: fixed; 
+            /*
+            É alinhado baseado na janela do navegador. mesmo que vc role a pagina o item ainda continuará no mesmo lugar
+            É possivel ajustar sua posição atravez de: top, right, bottom e left
+            */
+            border: 1px solid green;
+            background-color: rosybrown;
+            right: 0px;
+            bottom: 0px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Posicionamentos</h1>
+            <p> P1  (Static) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p class="absolute"> P2 (Absolute) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p class="fixed"> P3 (Fixed) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p class="relative"> P4 (Relative) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+            <p> P1 (Cobaia) Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+                Olá alegria via casa hackOlá alegria via casa hack Olá alegria via casa hack Olá alegria via casa hack
+            </p>
+        </div>
+    </body>
+</html>

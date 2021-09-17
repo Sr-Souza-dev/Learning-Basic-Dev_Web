@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h2>Login</h2>
+        <form action="processa.php">  <!--Definindo um formulário / action envia o resultado do formulário para o banco de dados de caminho especificado-->
+            Login:</br>
+            <input type="text" name="login"></br>   <!--Libera a entrada de texto-->
+            Senha:<br>
+            <input type="password" name="senha"> <br>   <!--Entrada de senha--> 
+            <input type="submit" value="Logar">     <!--Envia os dados para o servidor-->
+        </form>
+
+        <h2>Cadastro</h2>
+        <form>
+            Login:</br>
+            <input type="text" name="login"></br> <br>
+            Sexo:<br>
+            <input type="radio" name="sexo" value="M">Masculino<br> <!--Tipo radio cria uma caixa para marcar mas não permite duas escolhas-->
+            <input type="radio" name="sexo" value="F">Feminino<br> <br>
+            Interesse:<br>
+            <input type="checkbox" name="interresses" value="soccer">Futebol<br>   <!--Tipo checkbox permite escolhar mais de uma opção-->
+            <input type="checkbox" name="interesses" value="curso">Cursos<br>
+            <input type="checkbox" name="interesses" value="moda">Moda<br> <br>
+            Estado:<br>
+            <select name="estado">    <!--Cria uma caixa para escolher uma opção de option-->
+                <option value="SP">SP</option>
+                <option value="MG">MG</option>
+            </select> <br> <br>
+            Observações:<br>
+            <textarea name="" ></textarea>  <!--Cria uma caixa de texto maior para escrita. tem como definir número de linhas e colunas com rows e cols--> <br>
+            <input type="submit" value="cadastrar">
+        </form>
+
+        <form action="">
+
+            <h1>Novos inputs HTML 5</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="nome" required autofocus>
+            <br> <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <br> <br>
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero" min="2" max="70" step="2" required>
+            <br> <br>
+            <label for="url">Link</label>
+            <input type="url" name="url" id="url" placeholder="ex: www.exemple.com">
+            <br> <br>
+            <label for="perquisa">Pesquisar</label>
+            <input type="search" name="pesquisa" id="pesquisa">
+            <br> <br>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="1" max="10" value="5">
+            <br> <br>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data">
+            <br> <br>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+            <br> <br>
+
+
+            <input type="submit" name="" value="Enviar">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+
+    <script>
+        /*
+            Serve para se comunicar com recursos do browser atraves do JS
+            Como exemplo acessar o historico de navegação, forçar redirecionamento, salvar cokies...
+        */
+
+        //BOM WINDOW (janela) Para mais funcionalidades, consultar a documentação
+        var janela
+        function abrirPopUp(){
+            //abrindo uma nova tela com o youtube nas especificações determinadas
+           janela =  window.open('http:www.youtube.com', 'New Tab', 'width = 300, height = 400')
+        }
+        function fecharPopUp(){
+            //fechando a nova tela que foi aberta na função anterior
+            janela.close()
+        }
+
+        //BOM SCREEN (tela onde o body fica) Para mais funcionalidades, consultar a documentação
+        var altura = window.screen.availHeight      //Descobre a altura disponivel da tela (independe do dimensionamento)
+        var largura = window.screen.availWidth      //Descobre a largura disponivel da tela (independe do dimensionamento)
+
+        //BOM LOCATION (url) Para mais funcionalidades, consultar a documentação
+       // window.location.href = "http://www.google.com"      //Faz redirecionamentos para paginas do link
+        
+        //BOM TIMING
+        var timeoutx = setTimeout(function(){document.write('Hello World <br>')},5000)                 //Executa a ação uma vez após o tempo informado
+        clearTimeout(timeoutx) //Finaliza a função acima
+        var intervalx = setInterval(function(){document.write('Hello Beautiful World <br>')},2000)      //Sempre executa a ação após o período informado
+        clearInterval(intervalx) //Finaliza  afunção acima
+
+    </script>
+</head>
+<body>
+    <!--BOM WINDOW (janela)-->
+    <button onclick="abrirPopUp()">Abrir Janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+    <button onclick="window.print()">Imprimir Pagina</button>
+    
+</body>
+</html>

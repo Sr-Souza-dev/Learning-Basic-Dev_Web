@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+
+    <script>
+        /*
+            OPERADORES DE COMPARAÇÃO DO JS
+            '==' -> Se os valores são iguais
+            '===' -> Se os valores são identicos (valor e tipo são iguais)
+            '!=' -> Se os valores são diferentes
+            '!==' Se os valores são diferentes e de tipos diferentes
+            E todos os outros operadores de >, <, >= e <=
+        */
+
+        var condicao = true
+        var opcao = 2
+
+        // CONDICIONAIS IF - ELSE
+        if(condicao){
+            document.write("A condição é verdadeira!")
+        } else if (!condicao && 10>5){
+            document.write("A condição é falsa e 10 é maior que 5!")
+        } else{
+            document.write("A condição é falsa!")
+        }
+
+        //CONDICIONAIS OPERADOR TERNARIO
+        condicao 
+            ? document.write("(Ternario) A condição é verdadeira!")
+            : !condicao && 10 > 5 
+                ? document.write("(Ternario) A condição é false e 10 é maior que 5!")
+                : document.write("(Ternario) A condição é falsa!")
+
+        //CONDICIONAIS SWITCH
+        switch(opcao){
+            case 1:
+                //Condição 1 Executada
+                break;
+            case 2:
+                //Condição 2 Executada
+                break;
+            case 3:
+                //Condição 3 Executada
+                break;
+            default:
+                //Opção inválida
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

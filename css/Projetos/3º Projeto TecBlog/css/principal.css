@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(240, 239, 239, 0.897);
+}
+#menu{
+    background-color:#FFBF00;
+    text-align: center;
+    padding: 10px 5px;
+}
+#menu ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 8px;
+    margin-top: 15px;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px;
+}
+#menu h1 a span{
+    color:rgb(158, 91, 20);
+}
+#menu h1 a {
+    color:white;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+#menu ul li a:hover{
+    color:#FFBF00;
+    background-color: white;
+}
+#container{
+    width:75%;
+    margin: 15px auto;
+    position: relative;
+}
+
+#lateral{
+    position: absolute;
+    width: 250px;
+    left: 750px;
+}
+.bloco{
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.bloco h2{
+    background-color: #FFBF00;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+.bloco ul{
+    padding-left: 0px;
+}
+.bloco li{
+    list-style-type: none;
+}
+.bloco a{
+    text-decoration: none;
+    color:rgb(246, 193, 34);
+}
+.bloco a:hover{
+    color:darkgrey;
+}
+
+.postagem{
+    background-color: white;
+
+    width: 670px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.postagem h2{
+    margin: 0px;
+    color:rgb(246, 193, 34);
+    font-size: 34px;
+}
+.postagem img{
+    margin: 25px 0px 0px 0px;
+    width: 100%;
+}
+#footer{
+    text-align: center;
+    background-color: darkgray;
+    padding: 10px;
+}

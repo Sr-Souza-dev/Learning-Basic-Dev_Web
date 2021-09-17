@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Formatando Links</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            /*Links não visitados*/
+            a{
+                margin: 10px;
+                text-decoration: none;
+            }
+            a:link{
+                color:black;
+            }
+
+            /*Links Visitados*/
+            a:visited{
+                color: blueviolet;
+            }
+
+            /*Quando passa o mouse por cima do link*/
+            a:hover{
+                color: grey;
+                font-size: 120%;
+            }
+
+            /*Links ativos, quando você clica no link*/
+            a:active{
+                color: pink;
+            }
+        </style>
+
+    </head>
+
+    <body>
+       <a href="http://www.google.com.br">Google</a> |
+       <a href="http://www.tecmundo.com.br">Tec Mundo</a> |
+       <a href="http://www.megacurioso.com.br">Mega Curioso</a>
+    </body>
+</html>

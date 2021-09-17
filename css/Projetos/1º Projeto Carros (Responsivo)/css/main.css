@@ -1,0 +1,105 @@
+*, *:after, *:before {          /*Não deixa o objeto descer a linha até a restrição desejada*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Inicio Menu*/
+.navbar{
+    background-color:rgb(11, 11, 66);
+    position: fixed;    /*Fixei o menu para descer junto com a pagina*/
+    width:100%;
+    height: auto;
+}
+ul{
+    margin:0;
+    padding:20px;
+    text-align: right;
+}
+li{
+    display: inline-block;
+    
+}
+a{
+    list-style-type: none;
+}
+.list-link{
+    color: white;
+    text-decoration: none;
+    margin:0px 10px;
+    text-transform: uppercase;  /*Trasnformando todas letras do pedaço em Maiusculo*/
+}
+.navbar li a:hover{
+    color:lightgray;
+}
+/*Fim menu*/
+
+
+/*Inicio do destaque*/
+.hero{
+    background-image:url("../img/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    padding:100px 100px 0px;
+    text-align: center;
+    color:rgb(43, 36, 36);
+}
+.hero-title{
+    font-size: 38px;
+}
+.hero-text{
+    font-size:16px;
+    max-width: 700px;
+}
+.hero-button{
+    margin-top: 30px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color:rgb(240, 241, 243);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.hero-button:hover{
+    color:rgb(117, 115, 115);
+    cursor:grab;
+}
+/*Fim destaque*/
+
+
+
+/*Inicio Conteúdo*/
+.main-content{
+    background-color: white;
+    padding:100px;
+    height: auto;
+}
+.content-title{
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+}
+.content-text{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+/*Fim Conteúdo*/
+
+/*Inicio Contato*/
+.contato{
+    background-color: grey;
+    height: auto;
+    padding: 100px;
+ 
+}
+/*Fim Contato*/
+
+/*Inicio footer*/
+.footer{
+    background-color: yellow;
+    height: 60px;
+}
+/*fim footer */ 

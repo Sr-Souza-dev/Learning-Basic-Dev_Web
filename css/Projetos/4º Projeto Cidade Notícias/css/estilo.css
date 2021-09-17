@@ -1,0 +1,143 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+/*Estrutura pg*/
+#container-superior{
+    margin: 20px auto;
+    width: 75%;
+    background: url(../img/detalhe-topo.png) no-repeat right top;
+    height: 230px;
+    margin-top: 0px ;
+}
+#container{
+    margin: 2px auto;
+    width: 75%;
+}
+.flutuar{
+    float: left;
+    margin: 1%;
+}
+#nav-lateral{
+    width: 20%;
+}
+.conteudo{
+    width: 36%;
+}
+#rodape{
+    clear: both;
+    border: 1px solid black;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+/*Ajustes Gerais*/
+ul{
+    list-style: none;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
+h2{
+    margin: 0;
+    background-color: #242486;
+    color: white;
+    padding: 4%;
+    margin: 10px 4% 0% 4%;
+}
+.backgroung-box{
+    margin: 0% 4% 10px 4%;
+    padding: 4%;
+    background-color: white;
+}
+.box{
+    background: rgb(245, 243, 243) url(../img/fundo-caixa.png) left top;
+    padding: 5px 0px;
+    margin: 0px 0px;
+    margin-bottom: 20px;
+}
+
+/*Menu Superior*/
+#superior{
+    background: #000080 url(../img/fundo.png) repeat-x left top;
+    margin: 0;
+    height: 230px;
+}
+#container-superior img{
+    margin-top: 20px;
+}
+#container-superior ul{
+    margin-top: 40px;
+}
+#container-superior ul li{
+    float: left;
+}
+#container-superior ul a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    background: #f50c0c url(../img/divisor.png) no-repeat left center;
+}
+#container-superior #nav-horizontal .primeiro a{
+    background-image: none;
+}
+#container-superior ul a:hover{
+    background-color: rgb(231, 1, 1);
+}
+
+/*Lateral Esquerda*/
+.box ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 0px 25px;
+    display: block;
+}
+.box ul li a:hover{
+    color: gray;
+}
+.box form input[type=email]{
+    width: 98%;
+    height: 20px;
+    border: 0.5px solid grey;
+    margin-bottom: 5px;
+}
+.box form input[type=submit]{
+    background-color: #f50c0c;
+    color: bisque;
+    width: 70%;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    margin-left: 15%;
+}
+
+/*Central*/
+.backgroung-box>img{
+    width: 100%;
+}
+.backgroung-box>span{
+    background-color: #f50c0c;
+    color: white;
+}
+.mundo{
+
+}
+.mundo img{
+    width: 39%;
+    float: left;
+    margin-bottom: 5px;
+}
+.texto{
+    width: 60%;
+    float: right;
+}
+.texto span{
+    color: blue;
+    text-transform: uppercase;
+}
+.texto p{
+    color: black;
+    margin: 0;
+}

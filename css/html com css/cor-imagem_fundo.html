@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cor e Imagem de Fundo</title>
+        <meta charset="utf-8">
+
+        <style type="text/css"> /*Css na própria pagina*/
+           .fundo{
+               background-color:aqua;
+               color:blueviolet;
+               
+           }
+           body{
+               background-image:url('../img/yoshi.png');    /*Adcionando imagem de fundo*/
+               background-repeat: no-repeat;                /*Controlando a repetição da imagem no navegador*/
+               background-attachment: fixed;                /*Controlando a exposição da imagem*/
+               /*
+               fixed (ela aparece sempre, mesmo rolando a barra de navegação)
+               scroll (ela respeita a barra de navegação e sobe junto com o conteúdo)
+               */
+               background-position: right bottom; /*define a posição da imagem*/
+               /*
+               primeiro parametro: left, center, rigth
+               segundo parametro: top, center, bottom
+               */
+           }
+           .fundo_img{
+               background: grey url('../img/yoshi.png') no-repeat fixed; /*Define todos parametros em somente uma linha*/
+               /*cor, img, repetição,  exposição e posição do background*/
+               background-size: 10em; /*Tamanho da imagem de fundo*/
+           }
+        </style>
+    </head>
+
+    <body class="fundo_img">
+        <h1 class="fundo">Cor e Imagem de fundo</h1>
+        <p>lasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskflasnflkalsfklajsf lsjalsjfkjasfjas lasjflkajsflkjsalkfjaslkfjaskf</p>
+     
+    </body>
+</html>

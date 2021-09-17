@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+
+    <script>
+        //Declarando variaveis
+            //String
+            var nome = "Rodolfo"
+            //Number (qualquer numero real)
+            var numero = 123
+            //Boolean (true or false)
+            var condicionalValue = true
+            //Null (representa a ausência intencional de um valor)
+            var nullvar = null
+            //Undefined (não há nenhum tipo ou valor atribuido a variavel (como se o elemento não existisse))
+            var undvar = undefined
+            var undvar2
+
+            var variavel = prompt("Digite uma variavel: ")  //Exibe um dialog com uma entrada de texto (string)
+
+        //Casting de tipos
+        var inteiro = 29
+            inteiro = inteiro.toString() //Converte a variavel para string
+            inteiro = parseInt(inteiro)  //Converte a variavel para inteiro
+            inteiro = parseFloat(inteiro)//Converte a variavel para float
+
+        //Funções nativas para manipular strings
+        var stringname = "Gabriel Souza"
+        stringname.length       //retorna o tamanho da string em int
+        stringname.charAt(7)    //retorna a letra correspondente a posição 7
+        stringname.indexOf('S') //retorna a posição (em int) da primeira ocorrencia do caracter 'S'
+        stringname.replace('So', 'Caz') //Troca a primeira ocorrencia de 'So' por 'Caz'
+        stringname.substr(6,4)  //retorna os 4 caracteres após ao caracter de index 6
+        stringname.toLowerCase()  //retorna todo o texto em letra minuscula
+        stringname.toUpperCase()  //retorna todo o texto em letra maiuscula
+        stringname.trim()   //retorna o texto removendo espaço em branco nas extremidades caso ocorra
+
+        /*
+            Operações com Variaveis (Aritméticos)
+            Adição(+) -> Soma valores
+            Concatenação(+) -> Concatena Strings
+            Subtração(-) -> Diferença entre valores
+            Multiplicação(*) -> Produto dos valores
+            Divisão(/) -> Quociente dos valores
+            Módulo(%) -> Resto de uma operação de divisão
+            Incremento(++) -> Pré/Pós incremento (Pré ++inteiro) (Pós inteiro++)
+            Decremento(--) -> Pré/Pós decremento
+        */
+            nome = "Gabriel " + "Souza" //Concatenando Strings
+
+
+        // Comandos bons para debbuger (visualizando variaveis)
+            alert(nome)         //Exibe um alerta no navegador escrevendo uma string/var
+            /*
+                document é uma referência para objetos do DOM
+                ou seja,
+                todos os objetos que estão na pagina podem ser referênciados através do document
+            */
+            document.write(variavel)    //Cria uma div com o texto escrito dentro do body 
+            console.log(numero)     //Expõe uma variavel no console (compilador) do navegador
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

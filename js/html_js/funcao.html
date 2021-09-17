@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+
+    <script>
+        //DECLARANDO UMA FUNÇÃO QUE RECEBE 2 PARÂMETROS
+        function calcularArea(comprimento, largura){
+            //Logica da função e pode haver ou não um retorno
+            return (comprimento * largura)
+        }
+        //parametros opcionais (largura como opcional)
+        function calcularArea2(comprimento, largura){
+            largura = largura === undefined ? 1 : largura
+            return (comprimento*largura)
+        }
+
+        //parametros variaveis 
+        function soma (){
+            //imprime no body todos os argumentos passados para função
+            for(var i in arguments){
+                document.write(arguments[i])
+            }
+            
+        }
+        soma(7,4,'asf','564')
+
+        //FUNÇÃO ANONIMA (tecnica de wrapper - muito utilizado em callback)
+        var result = function () {
+            document.write('Olá Mundo')
+        }
+
+        //CHAMANDO A FUNÇÃO calcularArea E GUARDANDO O ROTORNO DELA NA VARIAVEL area
+        var area = calcularArea(10,15)
+
+        /*
+            Caso seja passado mais parâmetros do que foi definido para uma função
+            ela considera somente os primeiros e descarta o resto
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

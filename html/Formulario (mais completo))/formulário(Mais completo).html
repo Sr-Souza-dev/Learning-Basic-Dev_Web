@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+        <head>
+            <meta charset='utf-8'>  <!--Padroniza para Windows tb-->
+            <title>Formulário</title>
+        </head>
+
+        <body>
+            <form method="get" action="envio_dados.php"> <!--Criando um formulário-->
+                
+                <!--Entrada de opções ja definidas que retornaram o value para banco de dados-->
+                <input type="button" value="Click aqui" onclick="msg()"> <br/> <!--Cria um botão que exibe uma mensagem-->
+                <input type="checkbox" name="Veiculo 1" value="Bicicleta" checked>Eu tenho uma bicicleta<br/>    <!--Cria uma caixa para marcar-->
+                <input type="checkbox" name="Veiculo 2" value="Carro">Eu tenho um carro<br/>     <!---->
+                <input type="checkbox" name="Veiculo 3" value="Moto">Eu tenho uma moto<br/>  <!---->
+                Escolha sua idade:
+                <input type="radio" name="idade" value="18-23"> 18-23 <!--Da uma opção para o usúario, mas não deixa escolhar mais de uma-->
+                <input type="radio" name="idade" value="23-30"> 23-30 
+                <input type="radio" name="idade" value="mais 31"> mais 31 <br/> <br/>
+                Escolha uma nota de 0-100: <br/>
+                <input type="range" name="satisfacao" min="0" max="100"><!--Exibe uma barra de nivel-->
+                Satisfeito <br/> <br/>
+                Selecione sua cor preferida: <input type="color" name="favcor" value="#0000FF"> <br/>    <!--Caixa para escolher uma cor-->
+                <select id="estado" name="estados"> <!--Define um retangulo com seleções ocultas para escolha-->
+                    <option value="SP">São Paulo</option> <!--1º opção do retangulo-->
+                    <option value="MG">Minas Gerais</option>
+                </select> <br/> <br/>
+                <input id="comida" name="comida" type="text" list="comidas">
+                <datalist id="comidas"> <!--Faz sugestoẽs de texto na hora da escrita de alguma opção-->
+                    <option value="Lasanha"></option> <!--Opções do datalist-->
+                    <option value="Pizza"></option>
+                    <option value="Sopa"></option>
+                    <option value="Salada"></option>
+                </datalist> <br/> <br/>
+
+
+                
+                <!--Entrada de informações escritas-->
+                Nome:<input type="text" name="nome" placeholder="Digite seu nome aqui"> <!--Cria uma caixa para escrita e salva nome-->  <br/>
+                Email:<input type="e-mail" name="email" placeholder="Digite seu e-mail aqui"> <!--recebe um email-->    <br/>
+                Data de Nascimento: <input type="date" name="nascimento"> <br/>  <!--Recebe uma data-->
+                Data de Casamento: <input type="datetime-local" nome="bdaytime" placeholder="Digite sua data de casamento aqui"> <br/>  <!--Recebe uma data e um horário-->
+                Mês e Ano: <input type="month" name="mesano"> <br/>  <!--Recebe Mes e ano--> 
+                Quantidade entre (1-5): <input type="number" name="quantidade" min="1" max="5"> <br/>  <!--define uma caixa para colocar número-->
+                Digite sua Senha: <input type="password" name="senha" placeholder="Digite Sua Senha" maxlength="10" minlength="4"> <br/> <!--Area para senha, ja vem oculta-->
+                Escolha um Horario: <input type="time" name="usr_horario"> <br/> <!--Recebe um horário-->
+                Link do seu WebSite: <input type="url" name="webpage"> <br/> <!--Recebe um link-->
+                Selecione uma semana do ano: <input type="week" name="semana"> <br/> <br/> <!--Recebe a semana de um ano-->
+                <textarea>Digite aqui o texto</textarea> <br/> <!--Caixa de texto maior e ja vai escrita "digite aqui um texto"-->
+                <label for="nome">Seu Nome</label> <br/> <!--Identifica o tipo de informação que sera recebida pelo usuario-->
+                <input type="text" id="nome" placeholder="Digite seu nome" required> <br/>
+                <input type="file" name="arquivos"><br/>  <!--Recebe um arquivo do computador-->
+           
+
+
+                <!--Tags de Pesquisa e Submit-->
+                Pesquisar: <input type="search" name="q"> <br/> <!--Criando caixa de Pesquisa-->
+                <input type="reset"> <!--Apaga todos os campos preenchidos no formulário-->
+                <input type="image" src="img/coracao.png" alt="Submit" width="48" height="48"> <br/>     <!--Opera como o submit("alt" que altera para submit) so que exibe uma img, -->
+                <input type="submit" name="eniviar">    <!--Envia as informações-->
+                <button type="submit">Eviando/P/Buton</button>
+            </form> <!--Fim do formulario-->
+
+            <script> /*Criando uma função*/
+                function msg(){
+                    alert("Você clicou no botão!"); /*exibe alerta da função*/
+                }
+            </script>
+        </body>
+</html>

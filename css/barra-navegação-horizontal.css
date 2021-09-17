@@ -1,0 +1,29 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    background: #159cb0 url(img/fundo-horizontal.png) repeat-x;
+    float: left;
+    padding-left: 25%;
+}
+ul li{
+    float: left;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    background: url(img/divisor.png) repeat-y left top;
+}
+ul .primeiro a{
+    background: none;
+}
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+.clear{
+    clear: both;
+}

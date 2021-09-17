@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border= 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pagina{
+    width: 96%;
+    padding: 5px 2%;
+}
+
+/*Superior*/
+#superior{
+    height: 280px;
+    background-image: url("../img/topo-imagem-principal.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#superior a img{
+    float: left;
+    padding: 2%;
+}
+#navegacao{
+    width: 37%;
+    height: 280px;
+    padding-left: 100px;
+    float: right;
+    background-image: url("../img/topo-imagem-lateral.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+#endereco{
+    float: left;
+    width: 95%;
+    margin: 4% 4% 4% 1%;
+    padding: 3% 0px;
+    border-top: 1px rgb(119, 103, 39) solid;
+    border-bottom: 1px rgb(119, 103, 39) solid;
+    display: block;
+}
+#endereco a{
+    font-size: 90%;
+    text-decoration: none;
+    color: rgb(119, 103, 39);
+}
+#superior a:hover{
+    color: rgb(197, 177, 97);
+}
+#endereco .botao{
+    color: rgb(237, 222, 166);
+    font-size: 100%;
+    margin-left: 10%;
+    padding: 2%;
+    background-color: rgb(151, 132, 55);
+}
+#menu{
+    float: left;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    list-style: none;
+    margin: 10% 5%;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: rgb(97, 85, 34);
+    padding: 10px;
+}
+#frase{
+    float: right;
+    margin-right: 10%;
+}
+
+/*Conteúdo*/
+#conteudo{
+    background-image: url("../img/bg-container.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+}
+#conteudo:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#esquerda{
+    float: left;
+    width: 46%;
+    padding: 2%;
+}
+#esquerda h2{
+    color: rgb(97, 85, 34);
+}
+#direita{
+    float: right;
+    width: 46%;
+    padding: 2%;
+}
+#direita img{
+    width: 30%;
+    margin-right: 2%;
+    height: auto;
+    float: left;
+}
+#direita li{
+    list-style: none;
+    border-bottom: 1px rgb(97, 85, 34) solid;
+    padding: 2%;
+}
+#direita li:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#direita li a{
+    text-decoration: none;
+    color: rgb(97, 85, 34);
+}
+

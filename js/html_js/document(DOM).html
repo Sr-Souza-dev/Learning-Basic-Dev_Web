@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document DOM</title>
+
+    <!--
+        METODOS DE RECUPERAÇÃO DO DOM 
+
+        getElementById()                \\recupera a tag por id
+        getElementsByTagName()           \\recupera a tag 
+        getElementsByClassName()         \\recupera a tag 
+        getElementsByName()              \\recupera a tag 
+    -->
+
+    <style>
+        .estilo1{
+            background-color: darkblue;
+        }
+        .estilo2{
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Exibindo entrada (console.log)-->
+    <h3>Exibindo entrada (console.log)</h3>
+    <input 
+        type="text"
+        placeholder="Digite seu nome"
+        id="nome_usuario"
+        class="campo_texto"
+        name="nome"
+    >
+    <input 
+        type="text"
+        placeholder="Digite sua profissao"
+        id="profissao_usuario"
+        class="campo_texto"
+        name="profissao"
+    >
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Manipulando valores de input txt-->
+    <h3>Manipulando valores de input txt</h3>
+    <input 
+        type="text"
+        placeholder="Digite o que quiser"
+        id="entrada"
+        onkeydown="distribui()"
+    >
+    <hr>
+    <label for="nome">Letras</label>
+    <input type="text" name="nome" disabled = "disabled" id="letras">
+
+    <label for="numero">Numero</label>
+    <input type="text" name="numero" disabled = "disabled" id="numeros">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Manipulando estilos (style) de elementos-->
+    <h3>Manipulando estilos (style) de elementos</h3>
+    <button type="button" onclick="modificaEstilo('red')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('green')">Verde</button>
+    <button type="button" onclick="modificaEstilo('blue')">Azul</button>
+    <hr>
+    <div 
+        id="div_element"
+        style="border: solid 1px black; width: 200px; height: 200px;"
+    ></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Manipulando Classes de elementos-->
+    <h3>Manipulando Classes de elementos</h3>
+    <button type="button" onclick="modificaEstilo1()">Mudar Estilo da div</button>
+    <hr>
+    <div style="display: flex;">
+        <div 
+            id="div_elemento1"
+            class="estilo1"
+            style="border: solid 1px black; width: 200px; height: 200px;"
+        ></div>
+        <div 
+            id="div_elemento2"
+            class="estilo1"
+            style="border: solid 1px red; width: 200px; height: 200px;"
+        ></div>
+        <div 
+            id="div_elemento3"
+            class="estilo2"
+            style="border: solid 1px blue; width: 200px; height: 200px;"
+        ></div>
+    </div>
+    
+
+
+    <script>
+        /*EXIBINDO OS DADOS QUE FORAM RECUPERADOS*/
+        console.log(document.getElementById('nome_usuario'))
+        console.log(document.getElementsByTagName('input'))
+        console.log(document.getElementsByClassName('campo_texto'))
+        console.log(document.getElementsByName('nome'))
+
+        // MANIPULANDO INPUT TEXT
+        function distribui(){
+            var value = document.getElementById('entrada').value
+            document.getElementById('entrada').value = ""
+            value.trim()
+
+            switch(value){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('numeros').value = document.getElementById('numeros').value + value
+                    break
+                default:
+                    document.getElementById('letras').value = document.getElementById('letras').value + value
+            }
+        }
+
+        //MANIPULANDO ESTILO (STYLE) DE ELEMENTOS
+        function modificaEstilo(color){
+            document.getElementById('div_element').style.background = color
+        }
+
+        //MANIPULANDO CLASSES DE ELEMENTOS
+        function modificaEstilo1(){
+            document.getElementById('div_elemento1').className = 'estilo2'
+        }
+    </script>
+    
+</body>
+</html>

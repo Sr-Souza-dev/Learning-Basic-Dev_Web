@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <script>
+        function acao(nome){
+            console.log("Evento -" + nome + "- disparado")
+        }
+
+        //EVENTOS NO MOUSE
+            function acao1(){alert('Evento "OnClick" Disparado')}
+            function acao2(){alert('Evento "OndblClick" Disparado')}
+            function acao3(){alert('Evento "OnmouseUp" Disparado')}
+            function acao4(){alert('Evento "OnmouseOver" Disparado')}
+            function acao5(){alert('Evento "Onmouseout" Disparado')}
+        
+        //EVENTOS NO TECLADO
+            //onkeydown (quando a tecla é abaixada)
+            //onkeyup (quando a tecla levanta)
+            //onkeypress (quando ela abaixa e matem sendo pressionada (somente para caracteres))
+
+
+        //EVENTOS NA JANELA (FRAME) - feito no body
+            //onresize (quando a janela é redimensionada)
+            //onscroll (quando o scroll é ativado (rolagem))
+
+
+        //EVENTOS PARA FORMULARIOS
+            //onfocus (quando o elemento ganha o foco (quando é clicado/selecionado))
+            //onblur (quando o elemento perde o foco)
+            //onchange (quando o estado do elemento é modificado)
+
+    </script>
+</head>
+
+<body onresize="acao('OnresizeBody')" onscroll="acao('OnScrollBody')">
+    <!--EVENTOS NO MOUSE (não estão disponiveis para todos itens html)-->
+    <div 
+        onclick="acao1()"        
+        ondblclick="acao2()"
+        onmouseup="acao3()"
+        onmouseover="acao4()"
+        onmouseout="acao5()"
+        id="div_mouse" 
+        style="background-color: darkblue; height: 200px; width: 200px;">
+    </div>
+
+    <br>
+    <br>
+
+    <!--EVENTOS NO TECLADO-->
+    <input 
+        onkeydown="acao('onkeydown')"
+        onkeyup="acao('onkeyup')"
+        onkeypress="acao('onkeypress')"
+        type="text"
+    >
+
+    <br>
+    <br>
+
+    <!--EVENTOS PARA FORMULARIOS-->
+    <input 
+        onfocus="acao('onfocus')"
+        onblur="acao('onblur')"
+        onchange="acao('onChange')"
+        type="text"
+    >
+    <select onchange="acao('onChange')">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+    </select>
+
+</body>
+</html>

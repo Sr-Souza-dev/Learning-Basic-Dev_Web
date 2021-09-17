@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bordas</title>
+        <meta charset="utf-8">
+
+        <style type="text/css"> /*Css na própria pagina*/
+
+            #conteudo{
+                border: 2px solid red; /*border aceita 3 parametros: espessura, tipo de borda e cor*/
+                /*Definir as mesmas coisas da linha anterior*/
+                border-color: blue yellow red grey; /*Cada elemento recebe quatro parametros, referente aos 4 lados do retangulo*/
+                border-width: 15px 2px 7px 30px;            /*A referência começa da parte superior e gira no sentido horário*/
+                border-style: outset solid dotted dashed;   /*Se utilizado apenas dois parametros, a parte superior e inferior fica com o primeiro e as laterais fica com o segundo*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="conteudo">
+            Bordas <br>
+            Bordas <br>
+            Bordas <br>
+        </div>
+      
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset {
+    padding: 1em;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    margin: 1em 0em;
+}
+legend{
+    font-weight: bold;
+}
+label{
+    cursor:pointer;
+    display: inline-block;
+}
+input[type="text"]{     /*dentro do colchetes vc define os atrubutos expecificos do input para que não oegue todos*/
+    width:20em;
+}
+textarea{
+    width:20em;
+    height: 10em;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluindo Arquivos Js</title>
+
+    <!--Incluindo de forma externa-->
+    <script src="meu_script.js"></script>
+</head>
+<body>
+    <!--Incluindo de forma local-->
+    <script>
+        /*Digite seu codigo JS aqui*/
+    </script>
+
+
+<!--
+    A tag script pode ser criada dentro do head ou dentro do body
+    a grande diferença é o momento de interpretação,
+    todas tags dentro do head são interpretadas primeiro que as do body
+-->
+
+<!--
+    PRECEDENCIA
+    Caso um script JS no head esteja utilizando ou referênciando um item no body
+    dará um erro de precedencia, pois o item dentro do body ainda não foi interpretado
+-->
+</body>
+</html>

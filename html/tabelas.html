@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabela</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <table border="1px" width="100%">
+            <tr>    <!--tr de table row - (linha da tabela)-->
+                <th>  Codigo  </th>   <!--td de table head - (cabeçalho da tabela) tabem são as colunas-->
+                <th> Produto </th>
+                <th> Preço </th>
+            </tr>   
+            <tr>
+                <td>001</td>    <!--td de table date - (dados da tabela) tabem são as colunas-->
+                <td>Notebook</td>
+                <td>1.500,99</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Computador</td>
+                <td>1.900,99</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>
+                    <img src="img/ferrari.jpeg" height="100px"> <!--Adcionando imagem na tabela-->
+                </td>
+                <td>1.900,99</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td><a href="">Link</a></td>  <!--Adcionando um link na tabela-->
+                <td>1.900,99</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Desconto</td>   <!--rowspan - (extensão da linha) duas linhas para somente um td-->
+                <td colspan="2">cupom1 -R$10,00</td> <!--colspan - (extensão da coluna) duas colunas para somente um td-->
+            </tr>
+            <tr>
+                <td colspan="2">cupom2 -R$20,00</td> 
+            </tr>
+            <tr>
+                <td>Total: </td>
+                <td colspan="2">R$ 5.895,95</td>
+            </tr>
+        </table>
+    </body>
+</html>

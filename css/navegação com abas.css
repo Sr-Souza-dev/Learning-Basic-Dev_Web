@@ -1,0 +1,26 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li{
+    float: left;
+    background: url(img/aba-direita.png) no-repeat top right;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(img/aba-esquerda.png) no-repeat top left;
+}
+ul a:hover{
+    color: #894a1f;
+}

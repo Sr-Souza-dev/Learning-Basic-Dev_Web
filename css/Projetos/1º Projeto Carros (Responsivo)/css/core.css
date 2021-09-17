@@ -1,0 +1,31 @@
+html,body{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.container{
+    width: 100%;
+    max-width: 80%;
+    min-width:20%;
+    margin:0 auto;
+    padding: 0;
+    display:block;
+}
+.center{
+    text-align: center;
+}
+
+.row{
+    display: flex;      /*display flex vai sempre colocando um na frente do outro e quando chegar no limite ele joga para baixo*/
+    flex-wrap: wrap;    /*Permite o uso de outras linhas para que caiba dentro do container*/
+}
+
+.col{
+    float:left;
+    width:100%; 
+}
+
+.white{
+    color:white
+}

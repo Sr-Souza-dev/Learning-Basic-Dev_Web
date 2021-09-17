@@ -1,0 +1,10 @@
+body{
+    color:red;
+    border: 1px solid blue;
+}
+.pagina>p{
+    color:green;
+}
+div p{
+    color:pink;
+} 

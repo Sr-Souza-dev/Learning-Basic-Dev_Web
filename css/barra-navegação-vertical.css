@@ -1,0 +1,20 @@
+ul{
+    list-style-type:none;   /*Elimina a decoração da lista*/
+    padding: 0px;
+}
+ul a {
+    width:200px;
+    height: 40px;
+    display:block;
+    background:#f7b600 url(img/menu.png) no-repeat left bottom;
+    text-decoration: none;
+    color: black;
+    text-indent: 40px;          /*Empurra o texto 40px para a direita, é possivel ultilizar valores negativos*/
+    line-height: 40px;          /*Define a largura da linha em que o texto será escrito*/
+}
+
+a:hover, .selecionado a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}

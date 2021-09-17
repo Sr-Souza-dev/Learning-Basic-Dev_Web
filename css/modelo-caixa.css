@@ -1,0 +1,9 @@
+.conteudo{
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    margin: 20px 15px 20px 20px; /*também posso passar todos os valores para o padding*/
+    width:500px;
+}

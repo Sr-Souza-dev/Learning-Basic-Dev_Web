@@ -1,0 +1,54 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #f2f2f2;
+}
+
+#container{
+    width:820px;
+    margin: 0 auto;
+    background: #fff url(img/coluna.png) repeat-y left top;
+}
+
+#marca{
+    height: 200px;
+    background: #9E9E9E url(img/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+#conteudo{
+    width: 520px;
+    float: right;
+}
+#conteudo-principal{
+    width: 320px;
+    float:left;
+}
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+    padding-left: 20px;
+}
+#navegacao{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#navegacao ul{
+    list-style: none;
+}
+#navegacao ul li a{
+    text-decoration: none;
+}
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+.img-noticia{
+    width: 90%;
+    padding: 2%;
+    max-width: 600px;
+}

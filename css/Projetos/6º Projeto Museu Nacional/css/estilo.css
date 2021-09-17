@@ -1,0 +1,146 @@
+/* Definições gerais */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+}
+.dimensao{
+    width: 80%;
+    margin: 0px auto;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+a{
+    text-decoration: none;
+    color: rgb(186, 114, 7);
+}
+a:hover{
+    color: rgb(214, 132, 7);
+    font-size: 1.02em;
+}
+
+/* Topo do site */
+.container-navegacao{
+    background: url(../img/fundo.png) repeat;
+    height: 150px;
+    padding-top: 35px;
+}
+header h1{
+    margin-left: -700px;
+    margin-top: 0px;
+    
+}
+.container-navegacao nav ul{
+       list-style-type: none;
+       display: flex;
+}
+.container-navegacao nav ul li{
+    margin-right: 1.3em;
+}
+.container-navegacao nav ul a{
+   color: rgb(186, 114, 7);
+   font-size: 0.95em;
+   text-transform: uppercase;
+}
+.container-navegacao nav ul a:hover{
+    color: green;
+    text-decoration: underline;
+    font-size: 0.97em;
+ }
+
+/* Corpo do site */
+#corpo{
+    margin-top: -90px;
+}
+#corpo article{
+    width: 710px;
+}
+#corpo aside{
+    width: 350px;
+}
+.conteudo{
+    margin: 0px auto;
+    width: 310px;
+    text-align: left;
+}
+.conteudo h3{
+    padding: 10px 0;
+    color: green;
+    text-transform: uppercase;
+}
+.conteudo ul li{
+    margin-left: 30px;
+}
+
+/* Lateral do site */
+input{
+    border: none;
+}
+.visita{
+    margin: 10px auto 0;
+    padding: 15px;
+    background-color: #cdc8b1;
+}
+.visita input{
+    margin-top: 8px;
+}
+.botao{
+    width: 80%;
+    height: 30px;
+    margin: 0px 20px 10px 25px; 
+    color: white;
+    background-color: rgb(109, 109, 65);
+}
+
+#galeria{
+    background-color: #ebe7dd;
+    padding: 15px;
+}
+#container{
+    display: flex;
+    flex-direction: row;                /* Temos: row | row-reverse | column | column-reverse  (Organização dos blocos flutuantes no container)*/
+    flex-wrap: wrap;                  /* Temos: nowrap | wrap | wrap-reverse  (Define se o texto vai haver quebra ou não ao reduzir o tamanho do container)*/   
+    justify-content: center;        /* Temos: flex-start | flex-end | center | space-between | space-around     (Define a posição horizontal e a distribuição horizontal dos itens no container ) */
+    align-items: stretch; 
+}
+#galeria img{
+    width: 94px;
+    height: 94px;
+}
+#galeria a{
+    background: url(../img/fundo-foto.png) no-repeat;
+    display: block;
+    padding: 18px;
+    margin: 10px 0 0 20px;
+}
+aside h3{
+    color: rgb(186, 114, 7);
+}
+
+/* Roda pé */
+footer{
+    text-align: center;
+    margin: 30px 0px;
+    background: url(../img/fundo-rodape.png) no-repeat center top;
+}
+footer nav ul{
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer nav ul li{
+    margin: 0px 10px;
+}
+footer span{
+    color: rgb(186, 114, 7);
+}

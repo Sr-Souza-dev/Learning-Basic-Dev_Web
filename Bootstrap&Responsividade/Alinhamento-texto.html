@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Alinhamento de Testo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width; initial-scale = 1">
+        <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    </head>
+    <body style="margin-bottom: 200px; padding: 16px;">
+          
+        <!-- 
+            Alinhamento responsivo - (para telas maiores ou iguais...)
+            text-<tela>-<alinhamento>
+                tela: sm, md, lg, xl
+                alinhamento: start, center, end
+         -->
+        <p class="text-sm-center">tela &gt;= 576px</p>     <!--Small (sm)-->
+        <p class="text-md-end">tela &gt;= 768px</p>     <!--Medium (md)-->
+        <p class="text-lg-end">tela &gt;= 992px</p>     <!--Large (lg)-->
+        <p class="text-xl-end">tela &gt;= 1200px</p>    <!--Extra Large (xl)-->
+    
+        <br>
+        <br>
+    
+        <!-- Trasnformando Elemento Block para inline -->
+        <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+        <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- bg-success apenas para visualização -->
+    
+        <br>
+        <br>
+    
+        <!-- Trasnformando Elemento Inline para Block -->
+        <span class="bg-success d-block">Lorem ipsum dolor</span>
+        <span class="bg-success d-block">Lorem ipsum dolor 2</span>
+        <!-- bg-success apenas para visualização -->
+         
+        <br>
+        <br>
+    
+        <!-- Trasnformando para inline-Block -->
+        <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+        <h3 class="bg-success d-inline-block">Lorem ipsum dolor</h3>
+        <!-- bg-success apenas para visualização -->
+
+
+
+
+
+         <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="js/bootstrap.bundle.min.js"> </script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição</title>
+
+    <script>
+        var index = 1
+        //COMANDO ENQUANTO ENTÃO, VERIFICA PRIMEIRO A CONDIÇÃO E DEPOIS EXECUTA
+        while(index < 10){
+            console.log(index)
+            index++
+        }
+        //COMANDO ENTÃO ENQUANTO, EXECUTA O CORPO DA FUNÇÃO E DEPOIS VERIFICA
+        do{
+            console.log(index)
+            index--
+        }while(index>0)
+        //COMANDO PARA, EXECUTA ATE QUE A CONDIÇÃO DO INDEX SEJA QUEBRADA
+        for(index = 0; index<10; index++){
+            console.log(index)
+        }
+
+        //COMANDO PARA EM, EXECUTA ENQUANTO HOUVER ITENS NO ARRAY (percorre 1 a 1 salvando o indice em x)
+        var listaConvidados = ['Gabriel','Daniele', 'Lorrayne', 'Daniel', 'Raquel', 'Madruva']
+        for (var x in listaConvidados){
+            console.log(listaConvidados[x])
+        } 
+
+        //COMANDO SUBTIPO DE UMA ARRAY (percorre 1 a 1 e executa a função dentro do foreach a cada interação)
+        //Executa a função interna somente quando indice é inteiro positivo
+        listaConvidados.forEach(function(value, index, array){
+            console.log(value)
+        }) 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

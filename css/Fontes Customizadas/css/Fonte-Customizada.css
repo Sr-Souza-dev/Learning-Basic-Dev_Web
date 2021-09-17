@@ -1,0 +1,9 @@
+@font-face{                                     /*Buncando um arquivo de fontes (é necessario que o arquivo esteja em WOFF)*/
+    font-family: "Fonte Teste";                 /*Definindo um nome para fonte*/
+    src: url("../fonts/Road_Rage.woff");        /*Definindo endereço da fonte*/
+}
+
+h1{
+    font-size: 2em;
+    font-family: "Fonte Teste";                 /*Utilizando a fonte delarada acima*/
+}

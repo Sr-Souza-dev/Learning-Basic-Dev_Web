@@ -1,0 +1,38 @@
+#conteudo
+{
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;                      /* Display (liquido) permite organizar colunas sem que seja com o float */
+    flex-direction: row;                /* Temos: row | row-reverse | column | column-reverse  (Organização dos blocos flutuantes no container)*/
+    flex-wrap: nowrap;                  /* Temos: nowrap | wrap | wrap-reverse  (Define se o texto vai haver quebra ou não ao reduzir o tamanho do container)*/   
+    justify-content: flex-start;        /* Temos: flex-start | flex-end | center | space-between | space-around     (Define a posição horizontal e a distribuição horizontal dos itens no container ) */
+    align-items: stretch;               /* Temos: stretch | center | flex-start | flex-end | baseline       (Define a posição vertical e a distribuição vertical dos itens no container )*/
+}
+.item{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+    border: 1px solid grey;
+    flex-grow: 0;                       /* Define a capacidade de crescimento de um item (0 é o padrão)*/
+}
+.item1{
+    flex-grow: 1;                       /* Define a capacidade de crescimento de um item (1 - cresce o tamanho necessário para acupar todo width (quanto maior o número, maior o crescimento))*/
+    flex-basis: auto;                   /* Define o tamanho inicial do item antes da distribuição do espaço restante (pode ser usado em px, em, %...) */
+}
+.item2{
+    flex-shrink: 3;                     /* Define a capacidade de decrescimento de um item (quanto maior o número, menor o espaço que ele ocupa reduzido abaixo de sua definição) */
+}
+/* Definindo a ordem de amortragem visual dos itens (Para isso, é necessario que o container esteja com display em flax) */
+.ordem1{
+    order: 1;
+}
+.ordem2{
+    order: 2;
+}
+.ordem3{
+    order: 3;
+}
+.ordem4{
+    order: 4;
+}

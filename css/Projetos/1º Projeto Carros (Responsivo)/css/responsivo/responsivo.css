@@ -1,0 +1,83 @@
+
+@media screen and (min-width: 480px) and (max-width:800px){
+/*Menu*/
+    ul{
+        text-align: center;
+    }
+/*Destque*/
+    .hero{
+        padding: 30px;
+        background-size: auto;
+    }
+    .hero-title{
+        font-size:26px;
+    }
+    .hero-text{
+        font-size:14px;
+    }
+    .hero-button{
+        display:block;
+        padding: 5px 10px;
+        width:100%;
+    }
+/*Conteudo*/
+    .main-content{
+        padding: 30px;
+    }
+/*Contato*/
+    .contato{
+        padding:30px;
+    }
+}
+@media screen and (max-width:479px){
+/*Menu*/
+    ul{
+        text-align: center;
+    }
+    li.menu-link{
+        display: block;
+        margin: 10px;
+    }
+/*Destaque*/
+    .hero{
+        padding: 50px;  
+        background-size: auto; 
+    }
+    .hero-title{
+        font-size:18px;
+    }
+    .hero-text{
+        font-size:10px;
+    }
+    .hero-button{
+        display:block;
+        width:100%;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+/*Conteudo*/
+    .main-content{
+        padding: 15px;
+    }
+/*Contato*/
+    .contato{
+        padding:15px;
+    }
+}
+
+@media screen and (min-width: 801px){
+    .content-col{
+        width:33%; 
+        padding: 0px 20px; 
+    }
+    .lg-7{
+        width:33.3333%;
+    }
+    .lg-3{
+        width:66.6666%;
+        text-align: right;
+    }
+    .lg-5{
+        width: 50% !important;
+    }
+}

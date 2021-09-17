@@ -1,0 +1,14 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to top, red,green); /* linear-gradient (a primeira cor vai de onde pra onde "pode ser com graus(80deg)", cor1, cor2, cor 3...) */
+    /* Temos também o radio-gradient que define as cores da mesma maneira de forma circular */
+    padding: 10px;
+    border-radius: 10px;            /*Arredondamento da caixa*/
+    box-sizing: border-box;         /*Padding e margen não acrescendo mais no tamanho da caixa (O que facilita no controle de dimensões)*/
+
+}
+
+#caixa h1{
+    background: rgb(255,255,255, 0.5);  /* definindo a opacidade do fundo. Trasnarencia do background */
+}

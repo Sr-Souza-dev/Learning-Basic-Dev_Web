@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <script>
+        //ARRAY BÁSICO (declarando e colocando coisas)
+        var listfruit = Array('Macarrão', 'Arroz')
+        listfruit[4] = "Banana"
+        listfruit[2] = "Morango"
+        listfruit[3] = "Uva"
+        listfruit['fruta'] = 'Goiaba'
+        console.log(listfruit)
+
+        //ARRAY MULTIDIMENSIONAL
+        var listCoisas = Array()
+        listCoisas['frutas'] = Array()
+        listCoisas['frutas'][1] = 'Banana'
+        listCoisas['frutas'][2] = 'Morango'
+        listCoisas['frutas'][3] = 'Maçã'
+        listCoisas['pessoa'] = Array()
+        listCoisas['pessoa'][1] = "Jõao Silva"
+        listCoisas['pessoa'][2] = "José silva"
+        listCoisas['pessoa'][3] = "Gabriel Souza"
+        console.log(listCoisas)
+
+        //FUNÇÕES 
+        listfruit.length            //Não retorna necessariamente o tamanho do array e sim o valor do próximo indice
+        listfruit.push("Manga")     //Adiciona um elemento no final do array
+        listfruit.unshift("Goiaba") //Adiciona um elemento no inicio do array
+        listfruit.pop()             //Exclui um elemento no final do array
+        listfruit.shift()           //Exclui um elemento no inicio do array
+        listfruit.indexOf('Manga')  //Retorna o indice(chave) do elemento 'Manga'
+        listfruit.sort()            //Ordena de forma crescente (ascedente) elementos alfanumericos (palavras)
+        listfruit.sort(function (a,b){  //Ordena de forma números de forma crescente
+            return a - b
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros</title>
+
+    <script>
+       
+        try{
+            //Lógica
+            //Codigo que pode ocorrer um erro
+        } catch(erro){
+            //Lógica
+            //Caso ocorra o erro o catch recebe o erro 
+            // O throw força a finalização da aplicação como motivo a mensagem passada
+            throw new Error("Houve um erro, mas não se preocupe! Estamos trabalhando nisso agora")
+        } finally{
+            //O que fazer após o suposto tratamento do erro (sempre passa por aqui)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
